@@ -2,8 +2,8 @@
 
 All notable changes to the "easy-jquery" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+
 
 ## [Unreleased]
 
-- Initial release
+- Initial release easy-Jquery 1.0.0

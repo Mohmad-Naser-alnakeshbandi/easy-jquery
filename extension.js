@@ -2,7 +2,7 @@
 const vscode = require('vscode');
 const path = require('path');
 const fs = require('fs');
-const axios = require('axios');
+
 
 
 /**
@@ -17,18 +17,37 @@ function activate(context) {
 		const FolderPath= vscode.workspace.workspaceFolders[0].uri.path.toString().split(":")[1];
 		var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-		fs.writeFile(path.join(FolderPath, "index.html"), " ", err=>{
-			if(err){
-				console.error(err);
-			}
-		});
-		
 
-		fs.writeFile(path.join(FolderPath, "style.css"), " ", err=>{
-			if(err){
-				console.error(err);
-			}
-		});
+		vscode.window.showInformationMessage("creating Jquery Files");
+
+
+
+		var xhrTemplate = new XMLHttpRequest();
+		xhrTemplate.open("GET", "https://raw.githubusercontent.com/Mohmad-Naser-alnakeshbandi/easy-jquery/main/index.html", true);
+		xhrTemplate.onreadystatechange = function()
+   		{
+        if(xhrTemplate.readyState==4)
+        {
+		
+			fs.writeFile(path.join(FolderPath, "index.html"), this.responseText, err=>{
+				if(err){
+					console.error(err);
+					return vscode.window.showErrorMessage("Error");
+				}
+			});
+
+			fs.writeFile(path.join(FolderPath, "style.css"), " ", err=>{
+				if(err){
+					console.error(err);
+				}
+			});
+        }
+   		}
+		xhrTemplate.send();
+
+
+
+		
 
 
 		var xhrJS1 = new XMLHttpRequest();

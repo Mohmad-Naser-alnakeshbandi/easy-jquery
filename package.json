@@ -1,8 +1,14 @@
 {
   "name": "easy-jquery",
   "displayName": "easy-Jquery",
-  "description": "An exteion, that make the use of Jquery easier",
-  "version": "0.0.1",
+  "description": "An extension, that make the using of Jquery easier",
+  "version": "1.0.0",
+  "publisher": "MohamadNaserAlnakeshbandi-Student",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mohmad-Naser-alnakeshbandi/pyscriptmaker"
+  },
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.68.0"
   },
