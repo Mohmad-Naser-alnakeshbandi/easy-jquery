@@ -41,6 +41,12 @@ function activate(context) {
 					console.error(err);
 				}
 			});
+
+			fs.writeFile(path.join(FolderPath, "script.js"), " ", err=>{
+				if(err){
+					console.error(err);
+				}
+			});
         }
    		}
 		xhrTemplate.send();
