@@ -13,8 +13,10 @@
     "vscode": "^1.68.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Snippets"
   ],
+  
   "activationEvents": [
     "onCommand:easy-jquery.jquery"
   ],
@@ -24,6 +26,12 @@
       {
         "command": "easy-jquery.jquery",
         "title": "jquery"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
       }
     ]
   },

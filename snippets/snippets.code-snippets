@@ -1,6 +1,12 @@
 {
     "juqery-easy":{
         "prefix": "!jquery",
-        "body":[
-            "" ]    }
+        "body":["" ] 
+    }, 
+    
+    "loremtext-Eng-1":{
+        "prefix": "jtest",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "to generate one sentence"
+    },
 }

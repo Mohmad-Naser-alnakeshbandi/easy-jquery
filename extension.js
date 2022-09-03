@@ -22,11 +22,12 @@ function activate(context) {
 
 
 
-		var xhrTemplate = new XMLHttpRequest();
-		xhrTemplate.open("GET", "https://raw.githubusercontent.com/Mohmad-Naser-alnakeshbandi/easy-jquery/main/index.html", true);
-		xhrTemplate.onreadystatechange = function()
+		var xhrHTMLTemplate= new XMLHttpRequest();
+		var JSTemplate =" '$(document).ready(function(){'+ '\n' + // jQuery methods go here... + '\n' + }); "
+		xhrHTMLTemplate.open("GET", "https://raw.githubusercontent.com/Mohmad-Naser-alnakeshbandi/easy-jquery/main/index.html", true);
+		xhrHTMLTemplate.onreadystatechange = function()
    		{
-        if(xhrTemplate.readyState==4)
+        if(xhrHTMLTemplate.readyState==4)
         {
 		
 			fs.writeFile(path.join(FolderPath, "index.html"), this.responseText, err=>{
@@ -36,20 +37,20 @@ function activate(context) {
 				}
 			});
 
-			fs.writeFile(path.join(FolderPath, "style.css"), " ", err=>{
+			fs.writeFile(path.join(FolderPath, "style.css"), JSTemplate , err=>{
 				if(err){
 					console.error(err);
 				}
 			});
 
-			fs.writeFile(path.join(FolderPath, "script.js"), " ", err=>{
+			fs.writeFile(path.join(FolderPath, "script.js"), "", err=>{
 				if(err){
 					console.error(err);
 				}
 			});
         }
    		}
-		xhrTemplate.send();
+		   xhrHTMLTemplate.send();
 
 
 
