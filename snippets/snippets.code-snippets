@@ -3,10 +3,120 @@
         "prefix": "!jquery",
         "body":["" ] 
     }, 
-    
-    "loremtext-Eng-1":{
-        "prefix": "jtest",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "description": "to generate one sentence"
+    "Widgets-Accordion":{  
+        "prefix": "Accordion",
+        "body": " $( '#accordion' ).accordion();",
+        "description": "Displays collapsible content panels for presenting information in a limited amount of space."
     },
+    "Widgets-Autocomplete":{
+        
+        "prefix": "Autocomplete",
+        "body": "var availableTags = ['ActionScript','AppleScript','Asp','BASIC','C','C++','Clojure','COBOL','ColdFusion','Erlang','Fortran','Groovy','Haskell','Java','JavaScript','Lisp','Perl','PHP','Python','Ruby','Scala','Scheme']; \n $( '#tags' ).autocomplete({ \n  source: availableTags \n });",
+        "description": "Enables users to quickly find and select from a pre-populated list of values as they type, leveraging searching and filtering."
+    },
+    "Widgets-Button":{
+        
+        "prefix": "Button",
+        "body": " $( '.widget input[type=submit], .widget a, .widget button' ).button();\n$( 'button, input, a' ).on( 'click', function( event ) {  \n + event.preventDefault(); \n } );",
+        "description": "Enhances standard form elements like buttons, inputs and anchors to themeable buttons with appropriate hover and active styles."
+    },
+    "Widgets-Checkboxradio":{
+        
+        "prefix": "Checkboxradio",
+        "body": " $( 'input' ).checkboxradio();",
+        "description": "Enhances standard checkbox and radio input element to themeable buttons with appropriate hover and active styles."
+    },
+    "Widgets-Controlgroup":{
+        
+        "prefix": "Controlgroup",
+        "body": "    $( '.controlgroup' ).controlgroup() \n$( '.controlgroup-vertical' ).controlgroup({ \n'direction': 'vertical' \n});",
+        "description": "Groups multiple buttons and other widgets into one visual set."
+    },
+    "Widgets-Datepicker":{
+        
+        "prefix": "Datepicker",
+        "body": "  $( '#datepicker' ).datepicker();",
+        "description": "Select a date from a popup or inline calendar."
+    },
+    "Widgets-Dialog":{
+        
+        "prefix": "Dialog",
+        "body": " $( '#dialog' ).dialog();",
+        "description": "Open content in an interactive overlay."
+    },
+    "Widgets-Menu":{
+        
+        "prefix": "Menu",
+        "body": "$( '#menu' ).menu();",
+        "description": "Themeable menu with mouse and keyboard interactions for navigation."
+    },
+    "Widgets-Progressbar":{
+        
+        "prefix": "Progressbar",
+        "body": " $( '#progressbar' ).progressbar({ \n  value: 37 \n }); \n",
+        "description": "Display status of a determinate or indeterminate process."
+    },
+    "Widgets-Selectmenu":{
+        
+        "prefix": "Selectmenu",
+        "body": "     $( '#speed' ).selectmenu(); \n $( '#files' ).selectmenu();\n $( '#number' )\n.selectmenu()\n.selectmenu( 'menuWidget' )\n .addClass( 'overflow' );\n$( '#salutation' ).selectmenu();\n",
+        "description": "Displays collapsible content panels for presenting information in a limited amount of space."
+    },
+    "Widgets-Slider":{
+        
+        "prefix": "Slider",
+        "body": " $( '#slider' ).slider();",
+        "description": "Drag a handle to select a numeric value."
+    },
+    "Widgets-Spinner":{
+        
+        "prefix": "Spinner",
+        "body": "varspinner=$('#spinner').spinner();\n$('#disable').on('click',function(){\nif(spinner.spinner('option','disabled')){\nspinner.spinner('enable');\n}else{\nspinner.spinner('disable');\n}\n});\n$('#destroy').on('click',function(){\nif(spinner.spinner('instance')){\nspinner.spinner('destroy');\n}else{\nspinner.spinner();\n}\n});\n$('#getvalue').on('click',function(){\nalert(spinner.spinner('value'));\n});\n$('#setvalue').on('click',function(){\nspinner.spinner('value',5);\n});\n$('button').button();",
+        "description": "Enhance a text input for entering numeric values, with up/down buttons and arrow key handling."
+    },
+    "Widgets-Tabs":{
+        
+        "prefix": "Tabs",
+        "body": "$( '#tabs' ).tabs();",
+        "description": "A single content area with multiple panels, each associated with a header in a list."
+    },
+    "Widgets-Tooltip":{
+        
+        "prefix": "Tooltip",
+        "body": " $( document ).tooltip();",
+        "description": "Customizable, themeable tooltips, replacing native tooltips."
+    },
+
+
+    "Interactions-Draggable":{
+        
+        "prefix": "Draggable",
+        "body": "   $( '#draggable' ).draggable();",
+        "description": "Allow elements to be moved using the mouse."
+    },
+    "Interactions-Droppable":{
+        
+        "prefix": "Droppable",
+        "body": "$( '#draggable' ).draggable(); \n$( '#droppable' ).droppable({\ndrop: function( event, ui ) {\n$( this )\n.addClass( 'ui-state-highlight' )\n.find( 'p' )\n.html( 'Dropped!' );\n}\n});\n",
+        "description": "Create targets for draggable elements."
+    },
+    
+    "Interactions-Resizable":{
+        
+        "prefix": "Resizable",
+        "body": "  $( '#resizable' ).resizable();",
+        "description": "Change the size of an element using the mouse."
+    },
+    "Interactions-Selectable":{
+        
+        "prefix": "Selectable",
+        "body": " $( ' selectable' ).selectable();",
+        "description": "Use the mouse to select elements, individually or in a group."
+    },
+    "Interactions-Sortable":{
+        
+        "prefix": "Sortable",
+        "body": "  $( '#sortable' ).sortable();",
+        "description": "Reorder elements in a list or grid using the mouse."
+    },  
 }

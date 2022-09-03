@@ -23,7 +23,6 @@ function activate(context) {
 
 
 		var xhrHTMLTemplate= new XMLHttpRequest();
-		var JSTemplate =" '$(document).ready(function(){'+ '\n' + // jQuery methods go here... + '\n' + }); "
 		xhrHTMLTemplate.open("GET", "https://raw.githubusercontent.com/Mohmad-Naser-alnakeshbandi/easy-jquery/main/index.html", true);
 		xhrHTMLTemplate.onreadystatechange = function()
    		{
@@ -37,13 +36,7 @@ function activate(context) {
 				}
 			});
 
-			fs.writeFile(path.join(FolderPath, "style.css"), JSTemplate , err=>{
-				if(err){
-					console.error(err);
-				}
-			});
-
-			fs.writeFile(path.join(FolderPath, "script.js"), "", err=>{
+			fs.writeFile(path.join(FolderPath, "style.css"), "" , err=>{
 				if(err){
 					console.error(err);
 				}
@@ -53,7 +46,21 @@ function activate(context) {
 		   xhrHTMLTemplate.send();
 
 
-
+		   var xhrJSTemplate= new XMLHttpRequest();
+		   xhrJSTemplate.open("GET", "https://raw.githubusercontent.com/Mohmad-Naser-alnakeshbandi/easy-jquery/main/app.js", true);
+		   xhrJSTemplate.onreadystatechange = function()
+			  {
+		   if(xhrJSTemplate.readyState==4)
+		   {
+			   fs.writeFile(path.join(FolderPath, "app.js"), this.responseText, err=>{
+				   if(err){
+					   console.error(err);
+					   return vscode.window.showErrorMessage("Error");
+				   }
+			   });	
+		   }
+			  }
+			  xhrJSTemplate.send();
 		
 
 
