@@ -1,6 +1,6 @@
 # easy-jquery 
 
-<img src="./Background.png"
+<img src="https://raw.githubusercontent.com/Mohmad-Naser-alnakeshbandi/easy-jquery/main/Background.png"
 alt="Background"/>
 
 easy-jquery  is an extenstion that generate all necessary Files to use Jquery and Jquery UI + <b> Autocompletion </b> 
