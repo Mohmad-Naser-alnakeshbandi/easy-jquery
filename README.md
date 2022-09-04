@@ -57,7 +57,7 @@ alt="File Stuctur"/>
 </ol>
 <hr>
 
-## Visit my Jquery website for more Information:
+## Visit  Jquery website for more Information:
 <a href="https://jquery.com/"  target="_blank" rel="noreferrer">Jquery</a>
 
 
