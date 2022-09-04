@@ -57,7 +57,12 @@ alt="File Stuctur"/>
 </ol>
 <hr>
 
-## Visit  Jquery website for more Information:
+
+
+jQuery Effect Method .. is coming soon
+
+<hr>
+## Visit the Jquery website for more Information:
 <a href="https://jquery.com/"  target="_blank" rel="noreferrer">Jquery</a>
 
 
