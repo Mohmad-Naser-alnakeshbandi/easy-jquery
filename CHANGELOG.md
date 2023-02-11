@@ -6,4 +6,4 @@ All notable changes to the "easy-jquery" extension will be documented in this fi
 
 ## [Unreleased]
 
-- Initial release easy-Jquery 1.2.0
+- Initial release easy-Jquery 2.0
