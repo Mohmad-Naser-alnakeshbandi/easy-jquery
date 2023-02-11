@@ -16,7 +16,6 @@
     "Other",
     "Snippets"
   ],
-  
   "activationEvents": [
     "onCommand:easy-jquery.jquery"
   ],

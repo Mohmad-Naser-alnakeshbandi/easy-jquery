@@ -1,122 +1,293 @@
 {
-    "juqery-easy":{
+    "juqery-easy": {
         "prefix": "!jquery",
-        "body":["" ] 
-    }, 
-    "Widgets-Accordion":{  
+        "body": [
+            ""
+        ]
+    },
+    "Widgets-Accordion": {
         "prefix": "Accordion",
         "body": " $( '#accordion' ).accordion();",
         "description": "Displays collapsible content panels for presenting information in a limited amount of space."
     },
-    "Widgets-Autocomplete":{
-        
+    "Widgets-Autocomplete": {
         "prefix": "Autocomplete",
         "body": "var availableTags = ['ActionScript','AppleScript','Asp','BASIC','C','C++','Clojure','COBOL','ColdFusion','Erlang','Fortran','Groovy','Haskell','Java','JavaScript','Lisp','Perl','PHP','Python','Ruby','Scala','Scheme']; \n $( '#tags' ).autocomplete({ \n  source: availableTags \n });",
         "description": "Enables users to quickly find and select from a pre-populated list of values as they type, leveraging searching and filtering."
     },
-    "Widgets-Button":{
-        
+    "Widgets-Button": {
         "prefix": "Button",
         "body": " $( '.widget input[type=submit], .widget a, .widget button' ).button();\n$( 'button, input, a' ).on( 'click', function( event ) {  \n + event.preventDefault(); \n } );",
         "description": "Enhances standard form elements like buttons, inputs and anchors to themeable buttons with appropriate hover and active styles."
     },
-    "Widgets-Checkboxradio":{
-        
+    "Widgets-Checkboxradio": {
         "prefix": "Checkboxradio",
         "body": " $( 'input' ).checkboxradio();",
         "description": "Enhances standard checkbox and radio input element to themeable buttons with appropriate hover and active styles."
     },
-    "Widgets-Controlgroup":{
-        
+    "Widgets-Controlgroup": {
         "prefix": "Controlgroup",
         "body": "    $( '.controlgroup' ).controlgroup() \n$( '.controlgroup-vertical' ).controlgroup({ \n'direction': 'vertical' \n});",
         "description": "Groups multiple buttons and other widgets into one visual set."
     },
-    "Widgets-Datepicker":{
-        
+    "Widgets-Datepicker": {
         "prefix": "Datepicker",
         "body": "  $( '#datepicker' ).datepicker();",
         "description": "Select a date from a popup or inline calendar."
     },
-    "Widgets-Dialog":{
-        
+    "Widgets-Dialog": {
         "prefix": "Dialog",
         "body": " $( '#dialog' ).dialog();",
         "description": "Open content in an interactive overlay."
     },
-    "Widgets-Menu":{
-        
+    "Widgets-Menu": {
         "prefix": "Menu",
         "body": "$( '#menu' ).menu();",
         "description": "Themeable menu with mouse and keyboard interactions for navigation."
     },
-    "Widgets-Progressbar":{
-        
+    "Widgets-Progressbar": {
         "prefix": "Progressbar",
         "body": " $( '#progressbar' ).progressbar({ \n  value: 37 \n }); \n",
         "description": "Display status of a determinate or indeterminate process."
     },
-    "Widgets-Selectmenu":{
-        
+    "Widgets-Selectmenu": {
         "prefix": "Selectmenu",
         "body": "     $( '#speed' ).selectmenu(); \n $( '#files' ).selectmenu();\n $( '#number' )\n.selectmenu()\n.selectmenu( 'menuWidget' )\n .addClass( 'overflow' );\n$( '#salutation' ).selectmenu();\n",
         "description": "Displays collapsible content panels for presenting information in a limited amount of space."
     },
-    "Widgets-Slider":{
-        
+    "Widgets-Slider": {
         "prefix": "Slider",
         "body": " $( '#slider' ).slider();",
         "description": "Drag a handle to select a numeric value."
     },
-    "Widgets-Spinner":{
-        
+    "Widgets-Spinner": {
         "prefix": "Spinner",
         "body": "varspinner=$('#spinner').spinner();\n$('#disable').on('click',function(){\nif(spinner.spinner('option','disabled')){\nspinner.spinner('enable');\n}else{\nspinner.spinner('disable');\n}\n});\n$('#destroy').on('click',function(){\nif(spinner.spinner('instance')){\nspinner.spinner('destroy');\n}else{\nspinner.spinner();\n}\n});\n$('#getvalue').on('click',function(){\nalert(spinner.spinner('value'));\n});\n$('#setvalue').on('click',function(){\nspinner.spinner('value',5);\n});\n$('button').button();",
         "description": "Enhance a text input for entering numeric values, with up/down buttons and arrow key handling."
     },
-    "Widgets-Tabs":{
-        
+    "Widgets-Tabs": {
         "prefix": "Tabs",
         "body": "$( '#tabs' ).tabs();",
         "description": "A single content area with multiple panels, each associated with a header in a list."
     },
-    "Widgets-Tooltip":{
-        
+    "Widgets-Tooltip": {
         "prefix": "Tooltip",
         "body": " $( document ).tooltip();",
         "description": "Customizable, themeable tooltips, replacing native tooltips."
     },
-
-
-    "Interactions-Draggable":{
-        
+    "Interactions-Draggable": {
         "prefix": "Draggable",
         "body": "   $( '#draggable' ).draggable();",
         "description": "Allow elements to be moved using the mouse."
     },
-    "Interactions-Droppable":{
-        
+    "Interactions-Droppable": {
         "prefix": "Droppable",
         "body": "$( '#draggable' ).draggable(); \n$( '#droppable' ).droppable({\ndrop: function( event, ui ) {\n$( this )\n.addClass( 'ui-state-highlight' )\n.find( 'p' )\n.html( 'Dropped!' );\n}\n});\n",
         "description": "Create targets for draggable elements."
     },
-    
-    "Interactions-Resizable":{
-        
+    "Interactions-Resizable": {
         "prefix": "Resizable",
         "body": "  $( '#resizable' ).resizable();",
         "description": "Change the size of an element using the mouse."
     },
-    "Interactions-Selectable":{
-        
+    "Interactions-Selectable": {
         "prefix": "Selectable",
         "body": " $( ' selectable' ).selectable();",
         "description": "Use the mouse to select elements, individually or in a group."
     },
-    "Interactions-Sortable":{
-        
+    "Interactions-Sortable": {
         "prefix": "Sortable",
         "body": "  $( '#sortable' ).sortable();",
         "description": "Reorder elements in a list or grid using the mouse."
-    },  
+    },
+    "Effects-Hide": {
+        "prefix": "Hide",
+        "body": "$(element).hide();",
+        "description": "Hide the selected element."
+    },
+    "Effects-Show": {
+        "prefix": "Show",
+        "body": "$(element).show();",
+        "description": "Show the selected element."
+    },
+    "Effects-Toggle": {
+        "prefix": "Toggle",
+        "body": "$(element).toggle();",
+        "description": "Toggle between hiding and showing the selected element."
+    },
+    "Effects-FadeIn": {
+        "prefix": "FadeIn",
+        "body": "$(element).fadeIn();",
+        "description": "Fade in the selected element over a specified duration."
+    },
+    "Effects-FadeOut": {
+        "prefix": "FadeOut",
+        "body": "$(element).fadeOut();",
+        "description": "Fade out the selected element over a specified duration."
+    },
+    "Effects-FadeToggle": {
+        "prefix": "FadeToggle",
+        "body": "$(element).fadeToggle();",
+        "description": "Toggle between fading in and fading out the selected element over a specified duration."
+    },
+    "Effects-SlideUp": {
+        "prefix": "SlideUp",
+        "body": "$(element).slideUp();",
+        "description": "Slide up the selected element."
+    },
+    "Effects-SlideDown": {
+        "prefix": "SlideDown",
+        "body": "$(element).slideDown();",
+        "description": "Slide down the selected element."
+    },
+    "Effects-SlideToggle": {
+        "prefix": "SlideToggle",
+        "body": "$(element).slideToggle();",
+        "description": "Toggle between sliding up and sliding down the selected element."
+    },
+    "Effects-Animate": {
+        "prefix": "Animate",
+        "body": "$(element).animate({});",
+        "description": "Animate the CSS properties of the selected element."
+    },
+    "Effects-Stop": {
+        "prefix": "Stop",
+        "body": "$(element).stop();",
+        "description": "Stop the current animation on the selected element."
+    },
+    "Effects-Finish": {
+        "prefix": "Finish",
+        "body": "$(element).finish();",
+        "description": "Stop the current animation and jump to its end on the selected element."
+    },
+    "Effects-Delay": {
+        "prefix": "Delay",
+        "body": "$(element).delay();",
+        "description": "Delay the execution of the next animation in the queue on the selected element."
+    },
+    "Effects-Easing": {
+        "prefix": "Easing",
+        "body": "$(element).animate({}, 'easing');",
+        "description": "Specify the easing function for an animation on the selected element."
+    },
+    "Effects-Speed": {
+        "prefix": "Speed",
+        "body": "$(element).animate({}, duration);",
+        "description": "Set the duration for an animation on the selected element."
+    },
+    "Effects-Chain": {
+        "prefix": "Chain",
+        "body": "$(element).effect1().effect2();",
+        "description": "Chain multiple effects together on the selected element."
+    },
+    "Effects-FadeTo": {
+        "prefix": "FadeTo",
+        "body": "$(element).fadeTo();",
+        "description": "Fade the selected element to a specified opacity over a specified duration."
+    },
+    "Effects-Queue": {
+        "prefix": "Queue",
+        "body": "$(element).queue();",
+        "description": "Manage the queue of functions to be executed on the selected element."
+    },
+    "AJAX-Ajax": {
+        "prefix": "Ajax",
+        "body": "$.ajax({url: '', success: function(result)){}});",
+        "description": "Perform an asynchronous HTTP (Ajax) request."
+    },
+    "AJAX-Load": {
+        "prefix": "Load",
+        "body": "$(selector).load();",
+        "description": "Load data from the server and place the returned HTML into the selected element."
+    },
+    "AJAX-Get": {
+        "prefix": "Get",
+        "body": "$.get();",
+        "description": "Load data from the server using a GET request."
+    },
+    "AJAX-Post": {
+        "prefix": "Post",
+        "body": "$.post();",
+        "description": "Load data from the server using a POST request."
+    },
+    "AJAX-GetJSON": {
+        "prefix": "GetJSON",
+        "body": "$.getJSON();",
+        "description": "Load JSON-encoded data from the server using a GET request."
+    },
+    "AJAX-GetScript": {
+        "prefix": "GetScript",
+        "body": "$.getScript();",
+        "description": "Load and execute a JavaScript file from the server using a GET request."
+    },
+    "AJAX-Serialize": {
+        "prefix": "Serialize",
+        "body": "$(form).serialize();",
+        "description": "Encode a set of form elements as a string for submission."
+    },
+    "AJAX-SerializeArray": {
+        "prefix": "SerializeArray",
+        "body": "$(form).serializeArray();",
+        "description": "Encode a set of form elements as an array of objects for submission."
+    },
+    "AJAX-AjaxStart": {
+        "prefix": "AjaxStart",
+        "body": "$(document).ajaxStart();",
+        "description": "Register a function to be called when the first Ajax request begins."
+    },
+    "AJAX-AjaxStop": {
+        "prefix": "AjaxStop",
+        "body": "$(document).ajaxStop();",
+        "description": "Register a function to be called when all Ajax requests have completed."
+    },
+    "AJAX-AjaxComplete": {
+        "prefix": "AjaxComplete",
+        "body": "$(document).ajaxComplete();",
+        "description": "Register a function to be called whenever an Ajax request completes."
+    },
+    "AJAX-AjaxError": {
+        "prefix": "AjaxError",
+        "body": "$(document).ajaxError();",
+        "description": "Register a function to be called whenever an Ajax request fails."
+    },
+    "AJAX-AjaxSuccess": {
+        "prefix": "AjaxSuccess",
+        "body": "$(document).ajaxSuccess();",
+        "description": "Register a function to be called whenever an Ajax request completes"
+    },
+    "AJAX-Prefilter": {
+        "prefix": "ajaxPrefilter",
+        "body": "$.ajaxPrefilter( function( options, originalOptions, jqXHR ) {});",
+        "description": "Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax()."
+    },
+    "AJAX-Setup": {
+        "prefix": "ajaxSetup",
+        "body": "$.ajaxSetup({});",
+        "description": "Set default values for future Ajax requests. It sets the default values for all future AJAX requests."
+    },
+    "AJAX-Transport": {
+        "prefix": "ajaxTransport",
+        "body": "$.ajaxTransport(\"jsonp\", function( options, originalOptions, jqXHR ) {});",
+        "description": "Handle the actual transmission of Ajax data."
+    },
+    "AJAX-parseJSON": {
+        "prefix": "parseJSON",
+        "body": "$.parseJSON( json );",
+        "description": "Takes a well-formed JSON string and returns the resulting JavaScript object."
+    },
+    "AJAX-param": {
+        "prefix": "param",
+        "body": "$.param( obj );",
+        "description": "Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request."
+    },
+    "AJAX-Complete": {
+        "prefix": "ajaxComplete",
+        "body": "$( document ).ajaxComplete(function( event, xhr, settings ) {});",
+        "description": " Register a handler to be called when Ajax requests complete."
+    },
+    "AJAX-Send": {
+        "prefix": "ajaxSend",
+        "body": "$( document ).ajaxSend(function( event, jqxhr, settings ) {});",
+        "description": "Register a handler to be called when the first Ajax request begins."
+    }
 }
